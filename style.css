@@ -256,8 +256,6 @@ body {
     content:"";
     position: absolute;
     left: 40px;
-
-
   }
   
    
@@ -281,6 +279,7 @@ body {
 
 }
 .button-enter {
+  cursor: pointer;
   text-decoration: none;
   color: #000000;
   margin-right: 10px;
@@ -316,6 +315,7 @@ body {
 .registration {
 }
 .button-registration {
+  cursor: pointer;
   text-decoration: none;
   color: #000000;
   font-family: "Cuprum";
@@ -335,7 +335,7 @@ body {
 }
 
 .button-registration:hover {
-  cnkolor: red;
+  color: red;
 
 }
 
@@ -401,7 +401,7 @@ body {
 }
 
 .nav-link:active {
-  rgba(255, 255, 255, 1);
+ color: rgba(255, 255, 255, 1);
   background-color: rgba(41, 52, 73, 1);
 
 }
@@ -478,8 +478,7 @@ body {
   background-color: #dc91d8;
   position: relative;
 }
-.block-4 {
-}
+
 .block-5 {
   position: relative;
   background-color: #8ed78f;
@@ -535,12 +534,88 @@ body {
   color: #ffffff;
 }
 
+.block-4a {
+  background-image: url(./img/Perforatot-slide.jpg);
+}
+
+.block-4b{
+  background-image: url(./img/Dreli-slide.jpg);
+}
+
 .block-b {
+  position: relative;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
-  grid-row-end: 4;
-  background-image: url(./img/perf123.jpg);
+  grid-row-end: 4; 
+}
+
+.button-left{
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  background: url(./img/icon-left.svg) no-repeat;
+  width: 25px;
+  height: 45px;
+  margin-left: 24px;
+  margin-top: 34px;
+}
+
+ .button-right{
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  background: url(./img/icon-right.svg) no-repeat;
+  width: 25px;
+  height: 45px;
+  margin-left: 520px;
+  margin-top: 34px;
+ }
+ .slide-klick {
+  display: flex;
+ }
+ 
+.red-object {
+  margin-left: 79px;
+  margin-top: 50px;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: var(--button-shadow-color);
+  border: 3px solid white;
+}
+
+.white-object{
+  margin-left: 79px;
+  margin-top: 50px;
+  margin-left: 10px;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border: 3px solid white;
+}
+
+
+.text-slider1{
+  text-transform: uppercase;
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0px;
+  color: white;
+  padding-left: 24px;
+}
+
+.text-slider2{
+font-family: 'Cuprum';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 0px;
+color: white;
+padding-left: 24px;
 }
 
 .new-page-grid {
@@ -650,7 +725,7 @@ left: 150px;
 
 .catalog-button {
     margin-left: 24px;
-    margin-top: 201px;
+    margin-top: 39px;
     width: 192px;
     height: 38px;
 
@@ -724,7 +799,7 @@ left: 150px;
   line-height: 18px;
   text-transform: uppercase;
   height: 38px;
-  width: 103px;
+  width: 122px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -732,6 +807,8 @@ left: 150px;
   background-color: #ee3643;
   margin-left: auto;
   margin-right: auto;
+  clip-path: polygon(82% 0, 100% 50%, 82% 100%, 0 99%, 0 0);
+  padding-right: 10px;
 }
 .red-box {
   position: absolute;
@@ -804,19 +881,23 @@ left: 150px;
 
 }
 
+
+
 .slider {
   margin-top: 70px;
   background-color: #f1f5f7;
-  height: 552px;
   padding-top: 64px;
+
 }
-.servie {
-  display: fclex;
-  position: absolute;
+.serviсe {
+  
 }
 .servise-info{
+  box-sizing: border-box;
   position: relative;
   display: flex;
+
+
 }
 
 .slide-img-all {
@@ -829,9 +910,14 @@ left: 150px;
 }
 
 .pleasure {
-  height: 99px;
-  width: 300px;
+
+  width: 330px;
   color: #32425c;
+
+}
+
+.credit-button {
+  position: absolute;
 }
 
 .service-description {
@@ -850,6 +936,7 @@ left: 150px;
 
   margin-top: 70px;
   position: relative;
+  margin-bottom: 100px;
 }
 .slide-button-off{
   cursor: pointer;
@@ -883,12 +970,28 @@ left: 150px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  background-image: url(./img/slider-delivery.svg);
-background-repeat: no-repeat;
-background-position: right bottom;
-padding-bottom: 50px;
-display: none;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  display: none;
+
 }
+
+.slide-1 {
+  background-position: bottom -1px left 230px;
+  background-image: url(./img/slider-delivery.svg);
+
+}
+
+.slide-2 {
+  background-position: bottom -1px left 300px;
+  background-image: url(./img/slider-garant.svg);
+}
+
+.slide-3 {
+  background-position: bottom -1px left 228px;
+  background-image: url(./img/slider-credit.png);
+}
+
 .slide-show {
   display: block;
 }
@@ -900,6 +1003,7 @@ display: none;
   line-height: 30px;
   text-transform: uppercase;
   margin-top: 67px;
+  color: rgba(50, 66, 92, 1);
 }
 .delivery-description {
   font-family: "PT Sans";

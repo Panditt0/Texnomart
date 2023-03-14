@@ -9,6 +9,7 @@ const slide2 = document.querySelector(".slide-2");
 const slide3 = document.querySelector(".slide-3");
 
 
+
 button1.addEventListener("click", function () {
     button2.classList.remove("slide-button-on");
     button3.classList.remove("slide-button-on");
