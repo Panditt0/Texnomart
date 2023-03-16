@@ -8,6 +8,26 @@ const slide1 = document.querySelector(".slide-1");
 const slide2 = document.querySelector(".slide-2");
 const slide3 = document.querySelector(".slide-3");
 
+const button4 = document.querySelector(".button-left");
+const button5 = document.querySelector(".button-right");
+
+const slide4 = document.querySelector("slide-4");
+const slide5 = document.querySelector("slide-5");
+
+
+button4.addEventListener("click",function (){
+    button4.classList.remove("slide-show");
+    button5.classList.add("slide-show");
+
+
+
+
+})
+button5.addEventListener("click",function (){
+
+    button4.classList.add("slide-show");
+    button5.classList.remove("slide-show");
+})
 
 
 button1.addEventListener("click", function () {

@@ -2,6 +2,8 @@
   --header-top-bg-color: #293449;
   --header-bottom-bg-color: #f1f5f7;
   --button-shadow-color: #B52933;
+  --popular-product-blue-color :#F1F5F7;
+  --catalog-bg-pink-color:#F7F3EC;
 }
 
 html {
@@ -175,7 +177,7 @@ body {
 }
 
 .nav-items {
-
+  cursor: pointer;
   font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
@@ -184,6 +186,14 @@ body {
   color: #ffffff;
   padding-top: 37px;
   display: flex;
+}
+
+.nav-items:hover {
+  text-decoration: underline;
+}
+
+.nav-items:active {
+  opacity: 0.5;
 }
 
 
@@ -303,6 +313,11 @@ body {
 
 }
 
+.button-enter:active {
+  color: rgba(197, 197, 197, 1);
+
+}
+
 .button-enter::before{
   margin-left: 20px;
   background: url(./img/icon-voiti.png) no-repeat;
@@ -312,6 +327,10 @@ body {
   position: absolute;
   left: 0;
 }
+
+
+
+
 .registration {
 }
 .button-registration {
@@ -337,6 +356,10 @@ body {
 .button-registration:hover {
   color: red;
 
+}
+
+.button-registration:active {
+  color: rgba(197, 197, 197, 1);
 }
 
 .navigation {
@@ -396,13 +419,13 @@ body {
 }
 
 .nav-link:hover {
-  background-color: rgba(41, 52, 73, 1);
+
   color:rgba(255, 255, 255, 0.5);
 }
 
 .nav-link:active {
  color: rgba(255, 255, 255, 1);
-  background-color: rgba(41, 52, 73, 1);
+ background-color: #161D29;
 
 }
 
@@ -535,15 +558,17 @@ body {
 }
 
 .block-4a {
+
   background-image: url(./img/Perforatot-slide.jpg);
 }
 
 .block-4b{
+
   background-image: url(./img/Dreli-slide.jpg);
 }
 
 .block-b {
-  position: relative;
+
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -682,7 +707,6 @@ left: 150px;
   color: #32425c;
   margin-left: 28px;
   height: 30px;
-  width: 370px;
 }
 
 .p.things {
@@ -709,6 +733,13 @@ left: 150px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.popular-button:hover {
+  background-color: #CA2C37;
+}
+.popular-button:active {
+  background-color: #BA2732;
 }
 
 .button-read {
@@ -878,7 +909,6 @@ left: 150px;
 
 .logo-partner:active {
   opacity: 0.5;
-
 }
 
 
@@ -954,6 +984,14 @@ left: 150px;
   background-color: #32425C;
   box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
 }
+
+.slide-button-off:hover {
+  background-color: #293449;
+}
+.slide-button-on:hover {
+  background-color: white;
+}
+
 .slide-button-on {
   color: #32425C;
   background-color: #fff;
@@ -1072,6 +1110,7 @@ left: 150px;
   margin-left: auto;
 }
 .map {
+  height: 100%;
 }
 .red-map {
 }
@@ -1287,6 +1326,15 @@ left: 150px;
   line-height: 18px;
   color: #ffd180;
 }
+
+.mail:hover {
+  text-decoration: underline;
+}
+
+.mail:active {
+  color: rgba(238, 54, 67, 1);
+}
+
 .developer {
   font-family: "Cuprum";
   font-style: normal;
@@ -1314,4 +1362,232 @@ form {
   width: 70px;
   background-color: #1c87c9;
   color:#ffffff;
+  }
+
+/* КАТАЛОГ  */
+
+.flex {
+  display: flex;
+}
+
+.perf-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-product-catalog {
+    margin-top: 20px;
+    background-color: var(--popular-product-blue-color);
+  }
+
+  .sorting-list {
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows: repeat(3, 318px);
+    grid-gap: 20px;
+  }
+
+
+  .popular-product-catalog {
+  }
+  .popular {
+  }
+  .popular-product {
+  }
+  .popular-button {
+  }
+  .all {
+  }
+  .filter {
+  }
+  .pink {
+  }
+  .pink-filter {
+  }
+  .catalog-text {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .filter-text {
+  }
+  .price {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .green-line {
+  }
+  .green-line-filter {
+  }
+  .min {
+  }
+  .min-text {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .mix-text {
+  }
+  .firm {
+  }
+  .manufactures {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .manufactures-list {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .power {
+  }
+  .power-text {
+  }
+  .button-end {
+  }
+  .button-filter {
+  }
+  .catalog-list {
+  }
+  .sorting {
+  }
+  .sorting-type {
+  }
+  .sorting-line {
+  }
+  .link {
+  }
+
+  .container {
+  }
+  .popular-product-catalog {
+  }
+  .popular {
+  }
+  .popular-product {
+  }
+  .popular-button {
+  }
+  .all {
+  }
+  .filter {
+
+  }
+  .pink {
+    background-color: var(--catalog-bg-pink-color);
+  }
+  .pink-filter {
+  }
+  .catalog-text {
+  }
+  .filter-text {
+  }
+  .price {
+  }
+  .green-line {
+  }
+  .green-line-filter {
+  }
+  .min {
+  }
+  .min-text {
+  }
+  .mix-text {
+  }
+  .firm {
+  }
+  .manufactures {
+  }
+  .manufactures-list {
+  }
+  .power {
+  }
+  .power-text {
+  }
+  .button-end {
+  }
+  .button-filter {
+  }
+  .catalog-list {
+  }
+  .sorting {
+  }
+  .sorting-type {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--catalog-bg-pink-color);
+  }
+  .sorting-line {
+  }
+
+  .button-page {
+  }
+  .page-on {
+}
+.page-on {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+.page-off {
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+.page-next {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+.container {
+}
+.blue-box {
+  background-color: var(--popular-product-blue-color);
+}
+.blue-box-header {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+}
+.blue-box-text {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+  .page-off {
+  }
+  .page-next {
+  }
+  .container {
+  }
+  .blue-box {
+  }
+  .blue-box-header {
+  }
+  .blue-box-text {
   }
