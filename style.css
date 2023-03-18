@@ -558,24 +558,38 @@ body {
 }
 
 .block-4a {
-
+  width: 100%;
+  height: 100%;
+  position: absolute;
   background-image: url(./img/Perforatot-slide.jpg);
 }
 
 .block-4b{
-
+  width: 100%;
+  height: 100%;
+  position: absolute;
   background-image: url(./img/Dreli-slide.jpg);
 }
 
 .block-b {
-
+  position: relative;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4; 
 }
 
+.slide-togle {
+  display: none;
+}
+
+.active-block{
+  display: block;
+}
+
 .button-left{
+  position: absolute;
+  z-index: 1;
   border: 0px;
   background-color: transparent;
   cursor: pointer;
@@ -583,20 +597,24 @@ body {
   width: 25px;
   height: 45px;
   margin-left: 24px;
-  margin-top: 34px;
+  margin-top: 115px;
+
 }
 
  .button-right{
+  z-index: 1;
+  position: absolute;
   border: 0;
   background-color: transparent;
   cursor: pointer;
   background: url(./img/icon-right.svg) no-repeat;
   width: 25px;
   height: 45px;
-  margin-left: 520px;
-  margin-top: 34px;
+  margin-left: 580px;
+  margin-top: 115px;
  }
  .slide-klick {
+  margin-top: 70px;
   display: flex;
  }
  
@@ -623,12 +641,15 @@ body {
 
 
 .text-slider1{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
   text-transform: uppercase;
   font-family: 'Cuprum';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 0px;
+  line-height: 36px;
   color: white;
   padding-left: 24px;
 }
@@ -638,9 +659,10 @@ font-family: 'Cuprum';
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
-line-height: 0px;
+line-height: 24px;
 color: white;
 padding-left: 24px;
+margin-bottom: 0;
 }
 
 .new-page-grid {
@@ -1368,6 +1390,7 @@ form {
 
 .flex {
   display: flex;
+  justify-content: space-between;
 }
 
 .perf-list {
@@ -1411,8 +1434,16 @@ form {
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .sort {
+    padding: 10px 140px 10px 20px;
   }
   .filter-text {
+    padding: 10px 151px 10px 18px;
+    margin: 0;
+    
   }
   .price {
     font-family: 'PT Sans';
@@ -1420,12 +1451,21 @@ form {
     font-weight: 700;
     font-size: 17px;
     line-height: 30px;
+    text-transform: uppercase;
   }
   .green-line {
   }
   .green-line-filter {
+    display: flex;
+    justify-content: space-between;
   }
   .min {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 95px;
+    height: 38px;
+    background-color: var(--catalog-bg-pink-color);
   }
   .min-text {
     font-family: 'PT Sans';
@@ -1461,13 +1501,9 @@ form {
   .button-filter {
   }
   .catalog-list {
+    margin-top: 28px;
   }
-  .sorting {
-  }
-  .sorting-type {
-  }
-  .sorting-line {
-  }
+ 
   .link {
   }
 
@@ -1484,6 +1520,7 @@ form {
   .all {
   }
   .filter {
+    margin-top: 14px;
 
   }
   .pink {
@@ -1491,31 +1528,83 @@ form {
   }
   .pink-filter {
   }
-  .catalog-text {
-  }
+
   .filter-text {
   }
   .price {
   }
+  .green-line-box {
+    vertical-align: middle;
+    margin-top: 11px;
+    width: 220px;
+    height: 80px;
+    background-color: var(--catalog-bg-pink-color);
+  }
+
+  .grey-line {
+    vertical-align: middle;
+    width: 180px;
+    height: 2px;
+    color: rgba(197, 197, 197, 1);
+    z-index: 1;
+
+  }
   .green-line {
+    margin: auto;
+    width: 152px;
+    height: 2px;
+    background-color: green;
+    z-index: 2;
   }
+
+  .green-ball-min {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border: 8px solid white;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  .green-ball-max {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border: 8px solid white;
+    border-radius: 50%;
+    z-index: 3;
+  }
+
   .green-line-filter {
+    margin-top: 9px;
   }
-  .min {
-  }
-  .min-text {
-  }
-  .mix-text {
-  }
+
   .firm {
   }
   .manufactures {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
   }
   .manufactures-list {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
   }
   .power {
   }
   .power-text {
+    font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
   }
   .button-end {
   }
@@ -1526,11 +1615,22 @@ form {
   .sorting {
   }
   .sorting-type {
+    height: 38px;
     display: flex;
-    justify-content: space-between;
-    background-color: var(--catalog-bg-pink-color);
+    margin-top: 20px;
   }
   .sorting-line {
+    display: flex;    
+    margin-left: 23px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .by-price {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 105px;
+    width: 100%;
   }
 
   .button-page {
